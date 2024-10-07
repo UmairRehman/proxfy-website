@@ -1,0 +1,149 @@
+header{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	z-index: 2;
+}
+
+.header-main{
+	padding: 11rem 0;
+}
+
+.header-logo{
+	display: block;
+	width: 120rem;
+	height: auto;
+	aspect-ratio: 167/97;
+	img{
+		width: 100%;
+		height: 100%;
+		object-fit: contain;
+	}
+}
+
+.header-menu{
+	font-size: 14.8rem;
+	font-weight: $font-weight-bold;
+	color: $theme-black;
+	li{
+		margin: 0 16.5rem;
+		&:first-child{
+			margin-left: 0;
+		}
+		&:last-child{
+			margin-right: 0;
+		}
+		a{
+			color: $theme-black;
+		}
+	}
+}
+
+.header-nav{
+	.pox-btn{
+		margin-right: 8rem;
+		margin-left: 40rem;
+	}
+}
+
+.mob-menu-btn{
+	background-color: $theme-black;
+	padding: 10rem;
+	border-radius: 4rem;
+	color: $theme-white;
+	margin-left: 15rem;
+    width: 38rem;
+    height: 38rem;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    font-size: 20rem;
+}
+
+.mobile-nav{
+    position: fixed;
+    top: 0;
+    right: -280rem;
+    width: 280rem;
+    max-width: 100%;
+    height: 100%;
+    background: $theme-white;
+    z-index: 3;
+    box-shadow: -5rem 0 15rem -5rem rgba($theme-black,0.3);
+	transition: 0.3s all ease-in-out;
+	&.active{
+		right: 0;
+	}
+	i.fa-times{
+		position: absolute;
+		left: 15rem;
+		top: 15rem;
+		width: 32rem;
+		height: 32rem;
+		background: $theme-primary;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		border-radius: 50%;
+		color: $theme-white;
+		font-size: 16rem;
+	}
+	.mobile-logo {
+		display: block;
+		width: 140rem;
+		height: auto;
+		margin: 40rem auto 30rem;
+		aspect-ratio: 167 / 97;
+		img{
+			width: 100%;
+			height: 100%;
+			object-fit: contain;
+		}
+	}
+	.mobile-menu{
+		font-size: 18rem;
+		li{
+			border-bottom: 1rem solid $theme-lg-silver;
+			a{
+				color: $theme-black;
+				padding: 10rem 20rem;
+				display: block;
+			}
+		}
+	}
+}
+
+// Responsive
+@media(max-width: 1199px){
+    .header-nav{
+		.pox-btn{
+			margin-left: 25rem;
+		}
+	}
+	.header-menu {
+		li{
+			margin: 0px 12rem;
+		}
+	}
+}
+
+@media(max-width: 991px){
+    .header-menu{
+		display: none !important;
+	}
+	.header-nav{
+		.pox-btn{
+			margin: 0;
+		}
+	}
+	.mob-menu-btn{
+		display: flex;
+	}
+}
+
+@media(max-width: 460px){
+	.header-logo{
+		width: 100rem;
+	}
+}

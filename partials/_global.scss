@@ -1,0 +1,452 @@
+::-moz-selection {
+  background: $theme-primary;
+  color: $theme-white;
+  text-shadow: none;
+}
+
+::selection {
+  background: $theme-primary;
+  color: $theme-white;
+  text-shadow: none;
+}
+
+::-webkit-scrollbar {
+  width: 6rem;
+  // height: 10px;
+}
+
+::-webkit-scrollbar-button {
+    &:start:decrement, &:end:increment {
+    display: none;
+  }
+}
+
+::-webkit-scrollbar-track-piece {
+  background-color: $theme-silver;
+  -webkit-border-radius: 0px;
+  border-left: 1px solid rgba($theme-black, 0.1);
+}
+
+::-webkit-scrollbar-thumb:vertical {
+  -webkit-border-radius: 0px;
+  background: $theme-primary;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -ms-overflow-style: scrollbar;
+  -webkit-tap-highlight-color: transparent;
+}
+
+html {
+  font-size: calc(100vw / 1366);
+  scroll-behavior: smooth;
+}
+
+@media (min-width: 1921px) {
+  html {
+    font-size: 1.4px;
+  }
+}
+
+@media (max-width: 1440px) {
+  html {
+    font-size: 0.99px;
+  }
+}
+
+body {
+  font-size: 14rem;
+  font-family: $base-font-family;
+  color: $theme-default;
+}
+
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
+  margin-bottom: 14rem;
+  font-family: $heading-font-family;
+  font-weight: $font-weight-black;
+  line-height: $base-line-height;
+  color: $theme-black;
+}
+
+h1, .h1 {
+  font-size: $font-size-h1;
+}
+
+h2, .h2 {
+  font-size: $font-size-h2;
+}
+
+h3, .h3 {
+  font-size: $font-size-h3;
+}
+
+h4, .h4 {
+  font-size: $font-size-h4;
+}
+
+h5, .h5 {
+  font-size: $font-size-h5;
+}
+
+h6, .h6 {
+  font-size: $font-size-h6;
+}
+
+// Font Family Using Variables
+
+.ff-primary {
+  font-family: $base-font-family;
+}
+
+.ff-secondary {
+  font-family: $heading-font-family;
+}
+
+// Font Size Using Variables
+
+.fs-default {
+  font-size: $base-font-size;
+}
+
+.fs-xsmall {
+  font-size: $font-size-xsmall;
+}
+
+.fs-small {
+  font-size: $font-size-small;
+}
+
+.fs-medium {
+  font-size: $font-size-medium;
+}
+
+.fs-large {
+  font-size: $font-size-large;
+}
+
+.fs-xlarge {
+  font-size: $font-size-xlarge;
+}
+
+// Font Weight Using Variables
+
+.fw-light {
+  font-weight: $font-weight-light;
+}
+
+.fw-normal {
+  font-weight: $font-weight-normal;
+}
+
+.fw-bold {
+  font-weight: $font-weight-bold;
+}
+
+.fw-black {
+  font-weight: $font-weight-black;
+}
+
+// Colors Using Variables
+
+.fc-primary {
+  color: $theme-primary;
+}
+
+.fc-secondary {
+  color: $theme-secondary;
+}
+
+.fc-default {
+  color: $theme-default;
+}
+
+.fc-white {
+  color: $theme-white;
+}
+
+.fc-lg-silver {
+  color: $theme-lg-silver;
+}
+
+.fc-black {
+  color: $theme-black;
+}
+
+.fc-grey {
+  color: $theme-grey;
+}
+
+.fc-dgrey {
+  color: $theme-dk-grey;
+}
+
+.fc-lgrey {
+  color: $theme-lg-grey;
+}
+
+.fc-blue {
+  color: $theme-blue;
+}
+
+.fc-lg-blue {
+  color: $theme-lg-blue;
+}
+
+.fc-pink {
+  color: $theme-pink;
+}
+
+.fc-dk-pink {
+  color: $theme-dk-pink;
+}
+
+.fc-lg-pink {
+  color: $theme-lg-pink;
+}
+
+.fc-spblue {
+  color: $theme-sp-blue;
+}
+
+.fc-lg-black {
+  color: $theme-lg-black;
+}
+
+// Background Colors Using Variables
+
+.bg-primary {
+  background: $theme-primary;
+}
+
+.bg-middle {
+  background:$theme-middle;
+}
+
+.bg-lg-silver {
+  background: $theme-lg-silver;
+}
+
+.bg-lg-white {
+  background: $theme-lg-white;
+}
+
+.bg-blue {
+  background: $theme-blue;
+}
+
+.bg-lg-blue {
+  background: $theme-lg-blue;
+}
+
+.bg-dk-blue{
+  background: $theme-dk-blue;
+}
+
+.bg-lgrey {
+  background: $theme-lg-grey;
+}
+
+.bg-spblue {
+  background: $theme-sp-blue;
+}
+
+.bg-silver {
+  background: $theme-silver;
+}
+
+.bg-secondary {
+  background: $theme-secondary;
+}
+
+.bg-white {
+  background: $theme-white;
+}
+
+.bg-black {
+  background: $theme-black;
+}
+
+.bg-grey {
+  background: $theme-grey;
+}
+
+.bg-purple {
+  background: $theme-purple;
+}
+.bg-dgrey {
+  background: $theme-dk-grey;
+}
+
+.bg-dgreen {
+  background: $theme-dk-green;
+}
+
+.bg-spgrey {
+  background: $theme-sp-grey;
+}
+
+.bg-pink{
+  background: $theme-pink;
+}
+
+.bg-lg-black {
+  background: #2d2e2d;
+}
+
+// Background Positions
+
+.bg-cover {
+  background-size: cover;
+}
+
+.bg-contain {
+  background-size: contain;
+}
+
+.bg-left {
+  background-position: left;
+}
+
+.bg-center {
+  background-position: center;
+}
+
+.bg-right {
+  background-position: right;
+}
+
+.bg-top {
+  background-position: top;
+}
+
+// Background Repeat
+
+.bg-norepeat {
+  background-repeat: no-repeat;
+}
+
+.bg-repeat {
+  background-repeat: repeat;
+}
+
+.bg-repeat-x {
+  background-repeat: repeat-x;
+}
+
+.bg-repeat-y {
+  background-repeat: repeat-y;
+}
+
+// Background Attachments
+
+.bg-fixed{
+  background-attachment: fixed;
+}
+
+.bg-scroll{
+  background-attachment: scroll;
+}
+
+// Line height
+
+
+.lh-none {
+  line-height: 0;
+}
+.lh-default {
+  line-height: 0.7;
+}
+.lh-normal {
+  line-height: 1;
+}
+
+.lh-medium {
+  line-height: 1.2;
+}
+
+.lh-large {
+  line-height: 1.8;
+}
+
+.lh-xlarge {
+  line-height: 2.5;
+}
+
+
+// Letter Spacing
+
+.ls-xsmall {
+  letter-spacing: -2px;
+}
+
+.ls-small {
+  letter-spacing: -1px;
+}
+
+.ls-normal {
+  letter-spacing: 0px;
+}
+
+.ls-medium {
+  letter-spacing: 1px;
+}
+
+.ls-large {
+  letter-spacing: 3px;
+}
+
+.ls-xlarge {
+  letter-spacing: 8px;
+}
+
+// Verticale Alignment 
+
+.va-middle {
+  vertical-align: middle;
+}
+
+.va-top {
+  vertical-align: top;
+}
+
+.va-bottom {
+  vertical-align: bottom;
+}
+
+.sec-padding {
+  padding: 80px 0;
+  &.\--small {
+    padding: 44px 0;
+  }
+  &.\--xsmall {
+    padding: 18px 0;
+  }
+
+  &.\--large {
+    padding: 140px 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .sec-padding {
+    padding: 40px 0;
+  }
+}
+
+.title {
+  line-height: 1.2;
+  &.\--big {
+    width: 82%;
+    margin: 0 auto;
+  }
+}

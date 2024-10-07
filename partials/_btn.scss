@@ -1,0 +1,22 @@
+.pox-btn{
+    display: block;
+    padding: 11rem 28.5rem;
+    border-radius: 5rem;
+    background-color: $theme-black;
+    color: $theme-white;
+    font-weight: $font-weight-bold;
+    &.\--primary{
+        padding: 13rem 29rem;
+        background-color: $theme-primary;
+    }
+    &:hover{
+        color: $theme-white;
+    }
+}
+
+
+.pox-unstyled-btn{
+    color: $theme-black;
+    font-weight: $font-weight-bold;
+    font-size: 15rem;
+}

@@ -1,0 +1,119 @@
+// Font : Montserrat
+
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url('fonts/Lato/Lato-Light.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('fonts/Lato/Lato-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url('fonts/Lato/Lato-Bold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('fonts/Lato/Lato-Black.ttf') format('truetype');
+}
+
+$base-font-family		:   "Lato";
+$heading-font-family	:   "Lato"; 
+$sub-heading-font-family:   'franklin-gothic-medium';
+$paragraph-font-family	: 	'Lato';
+
+$font-special			: 	'slogan', serif;
+$font-another-special 	: 	'Playfair';
+$icon-font-family   	:   'FontAwesome';
+
+$base-line-height		: 	1.4;
+//** Default monospace fonts for `<code>`, `<kbd>`, and `<pre>`.
+
+$base-font-size		: 	14rem !default; // 14px
+$font-size-h1			: 	50rem; 		  // 35px
+$font-size-h2			: 	29.1rem;		  // 28px
+$font-size-h3			: 	21rem;		  // 24.5px
+$font-size-h4			: 	18rem; 		  // 21px
+$font-size-h5			: 	16rem;       // 17.5px
+$font-size-h6			: 	14rem;	      // 14px
+
+$font-size-xsmall		: 	12rem;   // 10px
+$font-size-small		: 	14rem;    // 12px
+$font-size-medium		: 	16rem;    // 16px
+$font-size-large		: 	20rem;   // 18px
+$font-size-xlarge		: 	24rem;   // 24px
+
+$font-weight-black		: 	700;
+$font-weight-bold		: 	500;
+$font-weight-normal		: 	400;
+$font-weight-light		: 	300;
+
+
+$font-size-h1-res		: 	36rem;	  // 40px
+$font-size-h2-res		: 	28rem;	  // 34px
+$font-size-h3-res		: 	24rem;	  // 24px
+$font-size-h4-res		: 	20rem;	  // 20px
+$font-size-h5-res		: 	16rem;    // 16px
+$font-size-h6-res		: 	14rem;		  // 14px
+
+
+//== Color Variation
+//
+//## Text color, Background color, Border color.
+
+$theme-default	: 	#797687;
+$theme-white	: 	#ffffff;
+$theme-black	: 	#000000;
+$theme-silver	: 	#F5F5F5;
+$theme-grey		: 	#F9F9F9;
+$theme-lg-grey	: 	#EBEBEB;
+$theme-sp-grey	: 	#DBDBDB;
+$theme-dk-grey 	: 	#eaeaea;
+$theme-sp-blue	:	#f3f9f9;
+$theme-lg-black :   #3B3A3A;
+$theme-lg-white : 	#E2EAF3;
+$theme-dk-pink	:   #C6C6C6;
+$theme-lg-black	: 	#434343;
+$theme-lg-pink 	: 	#bcbcbc;
+$theme-purple 	: 	#4B0082;
+$theme-dk-green	: 	#4c4c4c;
+$theme-lg-white	: 	#f0f2f5;
+$theme-lg-silver: 	#B3B3B3;
+$theme-lg-blue 	:  	#3D5975;
+$theme-dk-blue	:   #10121E;
+
+// Theme Colors
+
+$theme-primary	: 	#FE5E5E;
+$theme-middle	: 	#1EB1E5;
+$theme-secondary: 	#00E37D;
+$theme-blue 	: 	#47CFFF;
+$theme-pink		:	#C6C6C6;
+
+$link-color		: 	#ffffff;
+
+//== Sprite Path
+//
+
+$sprite-image			: 	"sprite.png";
+$media-basepath			: 	"images";
+$full-path				: 	"#{$media-basepath}/#{$sprite-image}";
+
+
+// Icon Fonts Path
+// $icomoon-font-path: "assets-web/icon-fonts/fonts" !default;
